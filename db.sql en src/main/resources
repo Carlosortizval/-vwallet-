@@ -1,0 +1,17 @@
+CREATE DATABASE vwallet;
+
+USE vwallet;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    correo VARCHAR(50),
+    password VARCHAR(100)
+);
+
+INSERT INTO users (nombre, correo, password) VALUES
+('felipe', 'felipe@example.com', '123123'),
+('maria', 'maria@example.com', '123123'),
+('pedro', 'pedro@example.com', '123123'),
+('ana', 'ana@example.com', '123123'),
+('elena', 'elena@example.com', '123123');
